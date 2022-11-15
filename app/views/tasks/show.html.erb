@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="application.css">
+<div>
+<h2><%="#{@task.title}"%></h2>
+
+<h5><%= "#{@task.details}" %></h5>
+  <% if @task.completed? %>
+    <p>This task is not completed yet </p>
+  <% else %>
+    <p>This task is completed </p>
+  <% end %>
+
+<p><%= link_to "Back to list", tasks_path %><p>
+
+<%= link_to "Delete",
+  tasks_path(@tasks),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+</div>

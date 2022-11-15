@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="application.css">
+<div>
+<form class="edit_task" id="edit_task" action="/tasks/1" accept-charset="UTF-8" method="post" data-remote="true">
+  <input type="hidden" name="authenticity_token" value="fUrBymmVzFG49YTQE9xKfohttEtW7eHnui2WT6KWpRXT6g9dz73lhZ7bRdHH+RuV/TFoB23OG5l1eo731o8l6g==">
+  <h3>
+  <p><label for="task_title">Title</label></p>
+  <p><input type="text" name="task[title]" id="task_title">
+  <p><label for="task_details">Details</label>
+  <p><input type="text" name="task[details]" id="task_details">
+  <p><label for="task_completed">Completed?</label>
+  <p><input type="text" name="task[completed]" id="task_completed">
+  </h3>
+  <p><input type="submit" name="commit" value="Update Task" data-disable-with="Update Task">
+</form>
+</div>

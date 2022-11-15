@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="application.css">
+<div>
+<form class="new_task" id="new_task" action="/tasks" accept-charset="UTF-8" method="post" data-remote="true">
+    <h3>
+  <p><label for="task_title">Title</label></p>
+  <p><input type="text" name="task[title]" id="task_title">
+  <p><label for="task_details">Details</label>
+  <p><input type="text" name="task[details]" id="task_details">
+  <p><label for="task_completed">Completed?</label>
+  <p><input type="text" name="task[completed]" id="task_completed">
+  </h3>
+  <input type="submit" name="commit" value="Create Task" data-disable-with="Create Task">
+</form>
+</div>
